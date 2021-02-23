@@ -10,6 +10,9 @@ set tabstop=4
 "auto indent
 set ai
 
+"set ignore case, highlight search and incremental search
+set ic hls is
+
 "auto close brackets and quotes
 inoremap " ""<left>
 inoremap ' ''<left>
@@ -25,3 +28,10 @@ inoremap '' ''<right>
 inoremap () ()<right>
 inoremap [] []<right>
 inoremap {} {}<right>
+
+"toggle search highlight
+nnoremap <F3> :set hls!<CR>
+nnoremap / :set hls<CR>/
+
+"change search hilighting colour
+hi Search ctermbg=DarkGrey
