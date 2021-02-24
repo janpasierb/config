@@ -35,3 +35,8 @@ nnoremap / :set hls<CR>/
 
 "change search hilighting colour
 hi Search ctermbg=DarkGrey
+
+"map splitting windows
+map <Tab> <C-W>w
+map <Bar> <C-W>v<C-W><Right>
+map -     <C-W>s<C-W><Down>
