@@ -7,6 +7,9 @@ unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
+
+export PATH=/opt/idafree-7.0:$PATH
+
 zstyle :compinstall filename '/home/janek/.zshrc'
 
 autoload -Uz compinit
@@ -23,6 +26,8 @@ alias yt="youtube-dl"
 alias pdf="zathura"
 alias img="sxiv"
 alias spotify="ncspot"
+alias ard="arduino-cli"
+#alias buku="buku --suggest"
 #alias val="valgrind -s --leak-check=full --show-leak-kinds=all --track-origins=yes --log-file=\"valgrind.log\""
 
 # create a zkbd compatible hash;
@@ -68,3 +73,4 @@ fi
 
 # enable key mappings
 xbindkeys -p
+
